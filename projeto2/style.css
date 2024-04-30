@@ -69,13 +69,14 @@ body {
 .desc p {
     color: #b0b0ba;
     padding-top: 5px;
-    text-transform: uppercase;
 }
 
 .desc h4 {
-    display: none;
+    text-transform: uppercase;
 }
 input {
     display: none;
 }
-input:checked
+input:checked + label {
+    width: 600px;
+}
