@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div id="sobre-container">
+      
         <div id="marca">
             <img src="./fotos/logo2.png" alt="logo">
-            <h1>YgorCursos</h1>
+            <h1>CreativeProgramming</h1>
         </div>
+     
         <p id="exclusivo">Treinamento Exclusivo</p>
-        <h2>Curso Completo de JavaScript</h2>
+        <h2>Curso Completo de <span style="color: rgb(238, 238, 10);">JavaScript</span></h2>
         <p id="data">20/05/2024 - | 10:00 | 100% Gratuito</p>
         <p id="descricao">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, aliquid. Alias exercitationem ipsam dignissimos saepe porro accusantium quos fuga autem eaque qui ex magni, laboriosam beatae ipsa nemo esse explicabo!
@@ -28,7 +33,7 @@
             </div>
             <div id="palestrantes-card">
                 <img src="fotos/pessoa2.png" alt="palestrante2">
-                <p class="nome">Rillary Luize</p>
+                <p class="nome">Késia Sandrely</p>
                 <p class="cargo">Empreendedora</p>
             </div> 
             <div id="palestrantes-card">
@@ -37,7 +42,7 @@
                 <p class="cargo">Tech Lead</p>
             </div>
         </div>
-    </div> 
+    </div>
     
     <div id="form-container">
         <div id="form-cadastro">
@@ -48,9 +53,19 @@
                     <input type="text" name="nome" id="nome" placeholder="Nome">
                     <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
                 </div>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="submit" value="cadastrar">
             </form>
+            <div id="beneficios">
+                <h4>o que você vai aprender</h4>
+                <ul type="circle">
+                    <li>Construção de Projeto com React</li>
+                    <li>Criação de jogo</li>
+                    <li>Site de Vendas</li>
+                    <li>Uso de Banco de Dados</li>
+                </ul>
+            </div>
         </div>
     </div>
-
 </body>
 </html>
