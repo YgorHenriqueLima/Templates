@@ -14,7 +14,7 @@ body {
     flex: 1.4;
     padding: 2rem 4rem;
 }
-#sobre-container > h2 {
+#sobre-container h2 {
     font-size: 2.4rem;
     max-width:500px;
     margin-bottom: 1rem;
@@ -28,7 +28,7 @@ body {
     margin-bottom: 1rem;
     color: blue;
 }
-#marca > img {
+#marca img {
     height: 50px;
     margin-right: 0.6rem;
 }
@@ -48,7 +48,7 @@ body {
     line-height: 1.4rem;
     margin-bottom: 1rem;
 }
-#sobre-container > h4 {
+#sobre-container h4 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
@@ -63,16 +63,16 @@ body {
     width: 180px;
     text-align: center;
 }
-#palestrantes-card > img{
+#palestrantes-card img{
     width: 130px;
     border-radius: 50%;
     margin-bottom:1rem;
 }
-#palestrantes-card > .nome{
+#palestrantes-card .nome{
     font-weight: bold;
     margin-bottom: 0.6rem;
 }
-#palestrantes-card > .cargo{
+#palestrantes-card .cargo{
     color: gray;
     font-size: 0.9rem;
 }
@@ -91,14 +91,14 @@ body {
     flex-direction: column;
     align-items: center;
 }
-#form-cadastro > h3{
+#form-cadastro h3{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-#form-cadastro > p{
+#form-cadastro p{
     margin-bottom: 1rem;
 }
-form#registro-form{
+#registro-form{
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
@@ -107,4 +107,9 @@ form#registro-form{
 #registro-nome{
     display: flex;
     gap: 0.5rem;
+}
+#registro-form input{
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-radius: 3px;
 }
