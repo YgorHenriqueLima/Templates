@@ -134,3 +134,26 @@ body {
 #beneficios{
     text-align: left;
 }
+#beneficios h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+#beneficios ul{
+    list-style:circle;
+    list-style-position: inside;
+}
+#beneficios li{
+    margin-bottom: 0.5rem;
+}
+@media(max-width:450px) {
+    body {
+        flex-direction: column;
+    }
+    #sobre-container{
+        padding: 2rem;
+        padding-bottom: 0px;
+    }
+    #sobre-container h2 {
+        font-size: 3rem;
+    }
+}
