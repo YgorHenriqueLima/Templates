@@ -113,3 +113,24 @@ body {
     border: none;
     border-radius: 3px;
 }
+
+#email{
+    min-width: 100%;
+}
+#registro-form input[type="submit"]{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#registro-form input[type="submit"]:hover{
+    background-color: #fff;
+    color: #0075ff;
+}
+#beneficios{
+    text-align: left;
+}
