@@ -112,6 +112,7 @@ body {
     padding: 0.8rem 0.6rem;
     border: none;
     border-radius: 3px;
+    outline: none;
 }
 
 #email{
@@ -156,5 +157,38 @@ body {
     }
     #sobre-container h2 {
         font-size: 3rem;
+    }
+    #exclusivo #data{
+        font-size: 1.4rem;
+    }
+    #descricao{
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    #sobre-container h4{
+        font-size: 2rem;
+    }
+    #palestrantes-container {
+        flex-direction: column;
+    }
+    #palestrantes-card{
+        width: 100%;
+        padding: 2rem;
+    }
+    #palestrantes-card img{
+        width: 180px;
+    }
+    #palestrantes-card .nome{
+        font-size: 1.6rem;
+    }
+    #palestrantes-card .cargo {
+        font-size: 1.4rem;
+    }
+    #form-cadastro{
+        margin: 2rem;
+        padding: 2rem;
+    }
+    #registro-form #registro-nome{ 
+        gap: 1rem;
     }
 }
