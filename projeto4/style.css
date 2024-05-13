@@ -145,6 +145,7 @@ body {
 #beneficios li{
     margin-bottom: 0.5rem;
 }
+
 @media(max-width:450px) {
     body {
         flex-direction: column;
