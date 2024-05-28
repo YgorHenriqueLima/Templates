@@ -50,39 +50,99 @@ nav .ativo a, nav a:hover{
     background-color: blue;
     color: white;
 }
+#banner{
+    display: flex;
+    justify-content: center;
+    background-image: url('imagem/');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+.coluna-container{
+    flex-direction: column; 
+}
 
-/* 
+.banner-texto{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-texto h1 {
+    color:gray;
+    font-size: 70px;
+    text-shadow: 1px 1px 1px lightgray;
+    margin: 0px;
+    padding: 0px;
+    max-width: 350px;
+}
+.banner-texto h2 {
+    color:gray;
+    font-size: 21px;
+    text-shadow: 1px 1px 1px lightgray;
+    margin: 0px;
+    padding: 0px;
+    max-width: 350px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}  
+.banner-opcoes{
+    height: 210px;
+    display: flex;
+}
 
-
-.linha1
-.ativo
-
-#banner
-.coluna-container
-.banner-texto
-.banner-opcoes
-.banner1
-.banner2
-.banner3
-.banner-titulo
-.banner-desc
-
-#geral
-.container
-.ferramentas
-.ferramentas-titulo
-.ferramentas-titulo-texto
-.ferramentas-titulo-barra
-.ferramentas-corpo
-.noticias
-.novo-post
-.novo-comentario
-.nova-noticia
-.novo-titulo
-.novo-resumo
-
-section
-footer
-article
-*/
-
+.banner1, .banner2, .banner3{
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+.banner1{
+    background-color: rgba(21, 21, 228, 0.77);
+}
+.banner2{
+    background-color: #ffaa00c9;
+}
+.banner3{
+    background-color: #061a27;
+}
+.banner-titulo{
+    font-size: 21px;
+    text-transform: uppercase;
+}
+.banner-desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner-opcoes a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section{
+    flex: 2; 
+}
+#geral aside {
+    flex: 1;
+}
+.ferramentas-titulo{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.ferramentas-titulo-texto{
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+}
+.ferramentas-titulo-barra{
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+}
