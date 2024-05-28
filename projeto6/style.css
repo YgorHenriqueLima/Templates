@@ -1,14 +1,63 @@
-/* classes e ids
-*
-body
+/*código estudado na aula */
 
-.container
-.logo 
-.menu
-.Menu1
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.logo{
+    display: flex;
+    align-items: center; 
+}
+
+/*alterar o menu responsivo*/
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul, nav li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+/*configuração que permite os links ficarem um do lado do outro*/
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+nav .ativo a, nav a:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* 
+
+
 .linha1
 .ativo
-section#banner
+
+#banner
 .coluna-container
 .banner-texto
 .banner-opcoes
@@ -18,4 +67,22 @@ section#banner
 .banner-titulo
 .banner-desc
 
+#geral
+.container
+.ferramentas
+.ferramentas-titulo
+.ferramentas-titulo-texto
+.ferramentas-titulo-barra
+.ferramentas-corpo
+.noticias
+.novo-post
+.novo-comentario
+.nova-noticia
+.novo-titulo
+.novo-resumo
+
+section
+footer
+article
 */
+
