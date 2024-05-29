@@ -23,6 +23,9 @@ header{
     display: flex;
     align-items: center; 
 }
+.logo img {
+    width: 110px;
+}
 
 /*alterar o menu responsivo*/
 .menu{
@@ -53,9 +56,10 @@ nav .ativo a, nav a:hover{
 #banner{
     display: flex;
     justify-content: center;
-    background-image: url('imagem/');
+    background-image: url('imagem/luuiz-alves-lacerda.jpg');
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     height: 670px;
 }
 .coluna-container{
@@ -69,15 +73,15 @@ nav .ativo a, nav a:hover{
     justify-content: center;
 }
 .banner-texto h1 {
-    color:gray;
-    font-size: 70px;
+    color:white;
+    font-size: 40px;
     text-shadow: 1px 1px 1px lightgray;
     margin: 0px;
     padding: 0px;
     max-width: 350px;
 }
 .banner-texto h2 {
-    color:gray;
+    color:white;
     font-size: 21px;
     text-shadow: 1px 1px 1px lightgray;
     margin: 0px;
@@ -145,4 +149,95 @@ nav .ativo a, nav a:hover{
     width: 50px;
     height: 2px;
     background-color: #36a9e1;
+}
+.ferramentas-corpo{
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+article a {
+    text-decoration: none;
+}
+article .noticias{
+    display: flex;
+}
+article .novo-post{
+    background-color: #2b4c99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .novo-comentario{
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+article .nova-noticia img {
+    width: 300px;
+}
+article .novo-titulo{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 23px;
+}
+article .novo-resumo{
+    color: #5c5c5c;   
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.footer-menu {
+    display: flex;
+}
+.menu-1, .menu-2, .menu-3{
+    flex: 1;
+    color: white;
+}
+.menu-1 {
+    background-color: #39aae1;
+}
+.menu-2 {
+    background-color: #0079c7;
+}
+.menu-3{
+    background-color: #2b4c99;
+}
+.footer-menu a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.footer-area{
+    display: flex;
+}
+.footer-area-item{
+    flex: 1;
+    color:white;
+}
+footer .ferramentas-titulo-texto{
+    color: white;
+}
+.footer_copy{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+} 
+.container-footer {
+    flex-direction: column;
 }
