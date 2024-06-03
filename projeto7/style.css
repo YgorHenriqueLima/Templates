@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header { 
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    background-color: aqua;
+}
+
+header #logo {
+    display: flex;
+    flex: 0 1 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+header #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    flex: 1 1 100px;
+}
+
+#menu a {
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    background-image: linear-gradient(to right,#555B6E,#92DCE5);
+}
+
+main .botoes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+main .botoes a {
+    margin-right: 10px;
+}
+
+#opcoes {
+    margin-left: 30px;
+}
+
+main #iframe {
+    margin: 0px auto;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
