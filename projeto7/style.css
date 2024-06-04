@@ -12,18 +12,24 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 .wrapper {
     flex: 1;
     display: flex;
     flex-direction: column;
+    position: relative; /* Adicione esta linha */
+    z-index: 1; /* Adicione esta linha */
 }
 
 header { 
     display: flex;
     flex-wrap: wrap;
     height: 80px;
+    z-index: 2; /* Adicione esta linha */
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 header #logo {
@@ -37,7 +43,6 @@ header #menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
     flex: 1 1 100px;
 }
 
@@ -47,7 +52,13 @@ header #menu {
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 20px;
+    color: black;
 }
+
+#menu a:hover {
+    background-color: blue;
+}
+
 
 main {
     display: flex;
@@ -55,7 +66,7 @@ main {
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    background-image: linear-gradient(to right,#555B6E,#92DCE5);
+    z-index: 2; /* Adicione esta linha */
 }
 
 main .botoes {
@@ -63,10 +74,19 @@ main .botoes {
     align-items: center;
     margin-bottom: 10px;
     font-size: 30px;
+    color: white;
 }
 
 main .botoes a {
     margin-right: 10px;
+    background-color: blue;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+main .botoes a:hover {
+    transition: 1s all;
+    background-color: white;
 }
 
 #opcoes {
@@ -81,4 +101,17 @@ footer {
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px 0;
+    z-index: 2;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -1;
+    background-size: cover; /* Adicione esta linha para garantir que o vídeo cubra a tela inteira */
 }
