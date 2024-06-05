@@ -20,15 +20,15 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    position: relative; /* Adicione esta linha */
-    z-index: 1; /* Adicione esta linha */
+    position: relative;
+    z-index: 1;
 }
 
 header { 
     display: flex;
     flex-wrap: wrap;
     height: 80px;
-    z-index: 2; /* Adicione esta linha */
+    z-index: 2;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -79,14 +79,12 @@ main .botoes {
 
 main .botoes a {
     margin-right: 10px;
-    background-color: blue;
-    padding: 15px;
     border-radius: 50%;
 }
 
-main .botoes a:hover {
-    transition: 1s all;
-    background-color: white;
+main .botoes a > img{
+    width: 50px;
+    border-radius: 50%;
 }
 
 #opcoes {
@@ -102,6 +100,9 @@ footer {
     text-align: center;
     padding: 10px 0;
     z-index: 2;
+}
+#copy a > img {
+    width: 20px;
 }
 
 #video-background {
