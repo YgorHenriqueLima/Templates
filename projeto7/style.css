@@ -92,7 +92,8 @@ main .botoes a > img{
 }
 
 main #iframe {
-    margin: 0px auto;
+    margin: 22px;
+    border: none;
 }
 
 footer {
