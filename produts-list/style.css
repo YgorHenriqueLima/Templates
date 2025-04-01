@@ -18,24 +18,26 @@
     font-family: "Red Hat Text", sans-serif;
     border: none;
     outline: none;
+ 
 }
-
 body{
-    background-image: linear-gradient(to bottom, var(--rose50), var(--rose100));
     background-size: cover;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    background-color: var(--rose100);
 }
 
 main{
     display: flex;
     flex-flow: row wrap;
 }
-
-#title{
-    padding: 5px;
-    margin: 4px;
+.dessert-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:6%;
+    width: 10%;
 }
 
 .container-menu{
@@ -52,7 +54,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-basis: 33.33%; 
-    padding: 10px;
+    padding: 5px;
 }
 
 .imagem {
@@ -79,7 +81,7 @@ main{
     border-radius: 10px;
     border: 1px solid var(--red);
     cursor: pointer;
-    transition: 0.8s;
+    transition: 0.3s;
     position: absolute; /* Posicione o botão sobre a imagem */
     bottom: 10px; /* Ajuste a posição do botão */
 }
@@ -115,6 +117,97 @@ main{
     font-size: 14px;
 }
 
+
+
+/*PARTE DO ESTILO CSS QUE VAI SER INTERATIVO NO JAVASCRIPT*/
+
+.container-cart{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    height: 50vh;
+}
+.title-cart{
+    color: var(--red);
+}
+.order-list{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.order-list .dessert{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.dessert > .dessert-info{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+.quant-dessert{
+    color: var(--red);
+}
+.unit-value{
+    color: var(--rose400);
+}
+.total-value{
+    color:var(--rose900);
+}
+.container-cart > .order-total{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 0px 15px 0px 15px;
+}
+.confirm-order{
+    display: flex;
+    padding: 10px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.confirm-order > .btn_confirmOrder {
+    border-radius: 20px;
+    padding: 5px;   
+    margin: 10px;
+    width: 140px;
+    background-color: var(--red);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn_confirmOrder:hover{
+    background-color: var(--rose500);
+    color: white;
+}
+/*==========================================================*/
+footer{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rose900);
+    color: white;
+    padding: 10px;
+}
+.attribution > a{
+    text-decoration: none;
+    color: var(--red);
+    transition: 0.3s;
+
+}
+.attribution > a:hover{
+    color: var(--rose500);
+    text-decoration: underline;
+}
 /* Media queries para responsividade */
 @media (max-width: 768px) {
     .item {

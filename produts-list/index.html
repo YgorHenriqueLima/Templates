@@ -9,7 +9,9 @@
 
 </head>
 <body>
-  <h1 id="title">Desserts</h1>
+  <header class="dessert-title">
+    <h1 id="title">Desserts</h1>
+  </header>
   <main>
     
     <div class="container-menu">
@@ -184,28 +186,57 @@
       
     </div>
     
-
+    <!--PARTE DO HTML QUE SERÁ INTERATIVO NO JAVASCRIPT-->
     <div class="container-cart">
-      <h1>Your Cart (7)</h1>
-      <div class="order-list">
-        <div class="dessert">
-          <h3>Classic Tiramisu</h3>
-          <p id="quantidade-dessert">1x</p>
-          <p id="valor-unitario">$5.50</p>
-          <p id="valor-total">$5.50</p>
+        <h1 class="title-cart">Your Cart (7)</h1>
+        
+        <div class="order-list">  
+          <div class="dessert">
+            <h3>Classic Tiramisu</h3>
+            <div class="dessert-info">
+              <p id="quant-dessert" class="quant-dessert">1x</p>
+              <p id="unit-value" class="unit-value">$5.50</p>
+              <p id="total-value" class="total-value">$5.50</p>
+            </div>
+          </div>
+
+          <div class="dessert">
+            <h3>Vanilla Bean créme Brúlée</h3>
+            <div class="dessert-info">
+              <p id="quant-dessert" class="quant-dessert">4x</p>
+              <p id="unit-value" class="unit-value">$7.00</p>
+              <p id="total-value" class="total-value">$28.00</p>
+            </div>
+          </div>
+  
+          <div class="dessert">
+            <h3>Vanilla Panna cotta</h3>
+            <div class="dessert-info">
+              <p id="quant-dessert" class="quant-dessert">2x</p>
+              <p id="unit-value" class="unit-value">$6.50</p>
+              <p id="total-value" class="total-value">$13.00</p>
+            </div>
+          </div>
         </div>
-  
-      </div>
-  
+      
+        <div class="order-total">
+          <p>Order Total</p>
+          <p id="order-total-value"><strong>$46.50</strong></p>
+        </div>
+
+        <div class="confirm-order">
+          <p>
+            <img src="assets/images/icon-carbon-neutral.svg" alt="icon-carbon-neutral">this is a carbon-neutral delivery
+          </p>
+          <button id="btn_confirmOrder" class="btn_confirmOrder">Confirm Order</button>
+        </div>
     </div>
   </main>
-
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/YgorHenriqueLima" target="_blank" rel="external">Ygor Henrique</a>.
     </div>
   </footer>
-  
 </body>
 </html>
