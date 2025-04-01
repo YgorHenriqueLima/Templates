@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root{
+    --red:hsl(14, 86%, 42%);
+    --green:hsl(159, 69%, 38%);
+    --rose50: hsl(20, 50%, 98%);
+    --rose100:hsl(13, 31%, 94%);
+    --rose300:hsl(14, 25%, 72%);
+    --rose400:hsl(7, 20%, 60%);
+    --rose500:hsl(7, 20%, 60%);
+    --rose900:hsl(14, 65%, 9%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--rose50), var(--rose100));
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#title{
+    padding: 5px;
+    margin: 4px;
+}
+
+.container-menu{
+    display: flex;
+    flex-flow: row wrap;
+    width: 67%;
+    height: 80%;
+    padding: 10px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.33%; 
+    padding: 10px;
+}
+
+.imagem {
+    position: relative;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.btn_addCart {
+    color: black;
+    padding: 5px 8px; 
+    border: none;
+    border-radius: 10px;
+    border: 1px solid var(--red);
+    cursor: pointer;
+    transition: 0.8s;
+    position: absolute; /* Posicione o botão sobre a imagem */
+    bottom: 10px; /* Ajuste a posição do botão */
+}
+
+.btn_addCart:hover{
+    background-color: var(--rose500);
+    color: white;
+}
+
+.btn_addCart img {
+    width: 15px;
+    margin-right: 3px;
+}
+
+.description-menu{
+    text-align: center;
+    width: 100%; /* Ajuste para ocupar toda a largura do item */
+}
+
+.description-menu > .name-dessert{
+    color: #555;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.description-menu > .description-dessert{
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.description-menu > span{
+    font-size: 14px;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .item {
+        flex-basis: 100%; /* Ajuste aqui */
+    }
+
+    .imagem {
+        width: 100%; /* Ajuste aqui */
+    }
+}
