@@ -116,12 +116,7 @@ main{
 .description-menu > span{
     font-size: 14px;
 }
-
-
-
-/*PARTE DO ESTILO CSS QUE VAI SER INTERATIVO NO JAVASCRIPT*/
-
-.container-cart{
+.container-cart {
     background-color: white;
     border-radius: 20px;
     padding: 10px;
@@ -130,42 +125,42 @@ main{
     width: 30%;
     height: 50vh;
 }
-.title-cart{
+.title-cart {
     color: var(--red);
 }
-.order-list{
+.order-list {
     padding: 5px;
     display: flex;
     flex-direction: column;
 }
-.order-list .dessert{
+.order-list .dessert {
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 10px;
 }
-.dessert > .dessert-info{
+.dessert > .dessert-info {
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
     justify-content: flex-start;
 }
-.quant-dessert{
+.quant-dessert {
     color: var(--red);
 }
-.unit-value{
+.unit-value {
     color: var(--rose400);
 }
-.total-value{
-    color:var(--rose900);
+.total-value {
+    color: var(--rose900);
 }
-.container-cart > .order-total{
+.container-cart > .order-total {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     margin: 0px 15px 0px 15px;
 }
-.confirm-order{
+.confirm-order {
     display: flex;
     padding: 10px;
     flex-flow: column wrap;
@@ -183,10 +178,13 @@ main{
     cursor: pointer;
     transition: 0.3s;
 }
-.btn_confirmOrder:hover{
+.btn_confirmOrder:hover {
     background-color: var(--rose500);
     color: white;
 }
+
+
+
 /*==========================================================*/
 footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
